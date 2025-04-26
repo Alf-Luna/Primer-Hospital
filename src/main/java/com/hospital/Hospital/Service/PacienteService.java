@@ -22,7 +22,7 @@ public class PacienteService {
     }
 
     public Paciente findById(int id){
-        return pacienteRepository.findById(id).orElseThrow(()-> new RuntimeException("Category not found"));
+        return pacienteRepository.findById(id).orElseThrow(()-> new RuntimeException("Paciente no econtrado"));
     }
 
     public Paciente save(Paciente paciente){
