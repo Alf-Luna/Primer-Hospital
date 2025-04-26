@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-public interface PacienteRepository {
-
+public interface PacienteRepository extends JpaRepository<Paciente, Integer>{
+    
 }
